@@ -21,4 +21,79 @@
         
 
     }
+    textarea{
+        padding: 3%;
+        border-color: #4b73f5;
+        border-width: thick;
+    }
+}
+
+
+.example{
+    //background-color: rgb(213, 227, 243);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:1px 0px 10px 1px rgba(201,201,201,201.47);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+}
+
+.code, .exercise-div{
+    line-height: 25px;
+    
+    //background-color: rgb(235,248,255);
+    //background-color:rgb(248,248,255); 
+    //background-color: rgb(255,255,255);
+    background-color: rgb(1,0,128);
+    padding: 1px 50px 1px 5px;
+    border-radius: 10px;
+    box-shadow:1px 0px 10px 1px rgba(201,201,201,201.47);
+    // margin-top: -10px;
+}
+.exercise-div{
+    background-color: rgb(231, 242, 248);
+    line-height: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:1px 0px 10px 1px rgba(201,201,201,201.47);
+}
+.exercise-title {
+    margin-top: 0px;
+}
+hr {
+
+    width:100%;
+                
+    margin:0 auto;
+                
+    border: 0;
+                
+    height: 1.5px;
+                
+    background-color: rgb(203, 203, 205)
+                
+}
+h3 {
+    line-height: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#input {
+    height: 300px;
+    width: 100%;
+}
+    
+p {
+    margin-top:-10px
+}
+h1 {
+    margin-bottom: 40px;
+}
+strong {
+    font-size: 18px;
+}
+.testbutton {
+    margin-bottom: 20px;
 }

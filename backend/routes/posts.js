@@ -2,7 +2,6 @@
 const router = require("express").Router();
 const User = require("../models/User");
 const Post = require("../models/Post");
-
 //CREATE POST
 router.post("/", async (req, res) => {
   const newPost = new Post(req.body);
@@ -13,7 +12,6 @@ router.post("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 //UPDATE POST
 router.put("/:id", async (req, res) => {
   try {
@@ -38,7 +36,6 @@ router.put("/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 //DELETE POST
 router.delete("/:id", async (req, res) => {
   try {
@@ -57,7 +54,6 @@ router.delete("/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 //GET POST
 router.get("/:id", async (req, res) => {
   try {
@@ -67,7 +63,6 @@ router.get("/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 //GET ALL POSTS
 router.get("/", async (req, res) => {
   const username = req.query.user;
@@ -90,5 +85,4 @@ router.get("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 module.exports = router;

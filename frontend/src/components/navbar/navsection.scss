@@ -1,6 +1,6 @@
 .navsection{
     font-size: 14px;
-    height: 48px;
+    height: 40px;
     border-bottom:0.5px solid rgb(147, 137, 137);
     display:flex;
     align-items: center;
@@ -18,7 +18,7 @@
     .search{
         display: flex;
         align-items: center;
-        border: 0.5px solid lightgray;
+        border: 0px solid rgb(249, 246, 246);
         padding: 3px;
         input{
             border: none;

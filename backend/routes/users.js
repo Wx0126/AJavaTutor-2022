@@ -2,7 +2,6 @@ const router = require("express").Router();
 const User = require("../models/User");
 const Post = require("../models/Post");
 const bcrypt = require("bcrypt");
-
 //UPDATE
 router.put("/:id", async (req, res) => {
   if (req.body.userId === req.params.id) {
@@ -46,7 +45,6 @@ router.delete("/:id", async (req, res) => {
     res.status(401).json("You can delete only your account!");
   }
 });
-
 //GET USER
 router.get("/:id", async (req, res) => {
   try {
@@ -57,5 +55,4 @@ router.get("/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 module.exports = router;

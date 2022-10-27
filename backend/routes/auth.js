@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
-
 //REGISTER
 router.post("/register", async (req, res) => {
   try {
@@ -19,7 +18,6 @@ router.post("/register", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 //LOGIN
 router.post("/login", async (req, res) => {
   try {
@@ -35,5 +33,4 @@ router.post("/login", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 module.exports = router;
